@@ -1,0 +1,12 @@
+[
+  {"id": "E01", "issue": "Repository files with private keys must never be indexed.", "expected_relevant_files": ["ai_engineer/security.py", "ai_engineer/indexing.py"], "category": "safety"},
+  {"id": "E02", "issue": "A repository path traversal must not permit a tool to read outside the repository.", "expected_relevant_files": ["ai_engineer/security.py", "ai_engineer/tools.py"], "category": "safety"},
+  {"id": "E03", "issue": "Python functions should be retrieved as AST-level code chunks.", "expected_relevant_files": ["ai_engineer/indexing.py"], "category": "code-rag"},
+  {"id": "E04", "issue": "The agent needs semantic keyword symbol and dependency retrieval.", "expected_relevant_files": ["ai_engineer/retrieval.py", "ai_engineer/indexing.py"], "category": "code-rag"},
+  {"id": "E05", "issue": "Generated tests must execute inside a disposable Docker sandbox.", "expected_relevant_files": ["ai_engineer/tools.py"], "category": "execution"},
+  {"id": "E06", "issue": "Code changes require human approval and unified diff validation.", "expected_relevant_files": ["ai_engineer/tools.py", "ai_engineer/agents.py"], "category": "governance"},
+  {"id": "E07", "issue": "Tests that fail should trigger iterative debugging until the maximum iteration limit.", "expected_relevant_files": ["ai_engineer/graph.py", "ai_engineer/agents.py"], "category": "agentic"},
+  {"id": "E08", "issue": "Successful solutions should become reusable engineering experiences.", "expected_relevant_files": ["ai_engineer/storage.py", "ai_engineer/agents.py"], "category": "memory"},
+  {"id": "E09", "issue": "The system needs local Ollama structured output with a deterministic safe fallback.", "expected_relevant_files": ["ai_engineer/llm.py", "ai_engineer/models.py"], "category": "llm"},
+  {"id": "E10", "issue": "Display agent evidence and a final engineering report in the workstation.", "expected_relevant_files": ["app.py", "ai_engineer/models.py"], "category": "ui"}
+]
